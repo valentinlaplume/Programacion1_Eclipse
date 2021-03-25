@@ -1,0 +1,342 @@
+12:26:17 **** Rebuild of configuration Debug for project Calculadora_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Calculadora_1.o" "..\\src\\Calculadora_1.c" 
+gcc -o Calculadora_1.exe "src\\Calculadora_1.o" 
+12:26:29 **** Incremental Build of configuration Debug for project Calculadora_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Calculadora_1.o" "..\\src\\Calculadora_1.c" 
+..\src\Calculadora_1.c: In function 'main':
+..\src\Calculadora_1.c:16:8: warning: unused variable 'resultado' [-Wunused-variable]
+   16 |  float resultado;
+      |        ^~~~~~~~~
+gcc -o Calculadora_1.exe "src\\Calculadora_1.o" 
+12:27:09 **** Incremental Build of configuration Debug for project Calculadora_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Calculadora_1.o" "..\\src\\Calculadora_1.c" 
+..\src\Calculadora_1.c: In function 'main':
+..\src\Calculadora_1.c:16:8: warning: unused variable 'resultado' [-Wunused-variable]
+   16 |  float resultado;
+      |        ^~~~~~~~~
+gcc -o Calculadora_1.exe "src\\Calculadora_1.o" 
+12:45:41 **** Incremental Build of configuration Debug for project Calculadora_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Calculadora_1.o" "..\\src\\Calculadora_1.c" 
+..\src\Calculadora_1.c:10:36: error: parameter 'fNumeroB' has just a forward declaration
+   10 | int funcionSumar(int fNumeroA; int fNumeroB;float *punteroResultado);
+      |                                ~~~~^~~~~~~~
+..\src\Calculadora_1.c:10:22: error: parameter 'fNumeroA' has just a forward declaration
+   10 | int funcionSumar(int fNumeroA; int fNumeroB;float *punteroResultado);
+      |                  ~~~~^~~~~~~~
+..\src\Calculadora_1.c: In function 'main':
+..\src\Calculadora_1.c:37:40: error: expected ')' before ';' token
+   37 |     respuestaReturn = funcionSumar(numA; numB; &resultado);
+      |                                        ^
+      |                                        )
+..\src\Calculadora_1.c:37:36: warning: passing argument 1 of 'funcionSumar' makes pointer from integer without a cast [-Wint-conversion]
+   37 |     respuestaReturn = funcionSumar(numA; numB; &resultado);
+      |                                    ^~~~
+      |                                    |
+      |                                    int
+..\src\Calculadora_1.c:10:52: note: expected 'float *' but argument is of type 'int'
+   10 | int funcionSumar(int fNumeroA; int fNumeroB;float *punteroResultado);
+      |                                             ~~~~~~~^~~~~~~~~~~~~~~~
+..\src\Calculadora_1.c: At top level:
+..\src\Calculadora_1.c:67:36: error: parameter 'fNumeroB' has just a forward declaration
+   67 | int funcionSumar(int fNumeroA; int fNumeroB;float *punteroResultado) // funcion sumar
+      |                                ~~~~^~~~~~~~
+..\src\Calculadora_1.c:67:22: error: parameter 'fNumeroA' has just a forward declaration
+   67 | int funcionSumar(int fNumeroA; int fNumeroB;float *punteroResultado) // funcion sumar
+      |                  ~~~~^~~~~~~~
+..\src\Calculadora_1.c: In function 'funcionSumar':
+..\src\Calculadora_1.c:69:22: error: 'fNumeroA' undeclared (first use in this function)
+   69 |  *punteroResultado = fNumeroA + fNumeroB;
+      |                      ^~~~~~~~
+..\src\Calculadora_1.c:69:22: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Calculadora_1.c:69:33: error: 'fNumeroB' undeclared (first use in this function)
+   69 |  *punteroResultado = fNumeroA + fNumeroB;
+      |                                 ^~~~~~~~
+12:45:57 **** Incremental Build of configuration Debug for project Calculadora_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Calculadora_1.o" "..\\src\\Calculadora_1.c" 
+..\src\Calculadora_1.c:10:36: error: parameter 'fNumeroB' has just a forward declaration
+   10 | int funcionSumar(int fNumeroA; int fNumeroB;float *punteroResultado);
+      |                                ~~~~^~~~~~~~
+..\src\Calculadora_1.c:10:22: error: parameter 'fNumeroA' has just a forward declaration
+   10 | int funcionSumar(int fNumeroA; int fNumeroB;float *punteroResultado);
+      |                  ~~~~^~~~~~~~
+..\src\Calculadora_1.c: In function 'main':
+..\src\Calculadora_1.c:37:40: error: expected ')' before ';' token
+   37 |     respuestaReturn = funcionSumar(numA; numB; &resultado);
+      |                                        ^
+      |                                        )
+..\src\Calculadora_1.c:37:36: warning: passing argument 1 of 'funcionSumar' makes pointer from integer without a cast [-Wint-conversion]
+   37 |     respuestaReturn = funcionSumar(numA; numB; &resultado);
+      |                                    ^~~~
+      |                                    |
+      |                                    int
+..\src\Calculadora_1.c:10:52: note: expected 'float *' but argument is of type 'int'
+   10 | int funcionSumar(int fNumeroA; int fNumeroB;float *punteroResultado);
+      |                                             ~~~~~~~^~~~~~~~~~~~~~~~
+..\src\Calculadora_1.c: At top level:
+..\src\Calculadora_1.c:67:36: error: parameter 'fNumeroB' has just a forward declaration
+   67 | int funcionSumar(int fNumeroA; int fNumeroB;float *punteroResultado) // funcion sumar
+      |                                ~~~~^~~~~~~~
+..\src\Calculadora_1.c:67:22: error: parameter 'fNumeroA' has just a forward declaration
+   67 | int funcionSumar(int fNumeroA; int fNumeroB;float *punteroResultado) // funcion sumar
+      |                  ~~~~^~~~~~~~
+..\src\Calculadora_1.c: In function 'funcionSumar':
+..\src\Calculadora_1.c:69:22: error: 'fNumeroA' undeclared (first use in this function)
+   69 |  *punteroResultado = fNumeroA + fNumeroB;
+      |                      ^~~~~~~~
+..\src\Calculadora_1.c:69:22: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Calculadora_1.c:69:33: error: 'fNumeroB' undeclared (first use in this function)
+   69 |  *punteroResultado = fNumeroA + fNumeroB;
+      |                                 ^~~~~~~~
+12:46:55 **** Incremental Build of configuration Debug for project Calculadora_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Calculadora_1.o" "..\\src\\Calculadora_1.c" 
+..\src\Calculadora_1.c:10:36: error: parameter 'fNumeroB' has just a forward declaration
+   10 | int funcionSumar(int fNumeroA; int fNumeroB;float *punteroResultado);
+      |                                ~~~~^~~~~~~~
+..\src\Calculadora_1.c:10:22: error: parameter 'fNumeroA' has just a forward declaration
+   10 | int funcionSumar(int fNumeroA; int fNumeroB;float *punteroResultado);
+      |                  ~~~~^~~~~~~~
+..\src\Calculadora_1.c: In function 'main':
+..\src\Calculadora_1.c:37:40: error: expected ')' before ';' token
+   37 |     respuestaReturn = funcionSumar(numA; numB; &resultado);
+      |                                        ^
+      |                                        )
+..\src\Calculadora_1.c:37:36: warning: passing argument 1 of 'funcionSumar' makes pointer from integer without a cast [-Wint-conversion]
+   37 |     respuestaReturn = funcionSumar(numA; numB; &resultado);
+      |                                    ^~~~
+      |                                    |
+      |                                    int
+..\src\Calculadora_1.c:10:52: note: expected 'float *' but argument is of type 'int'
+   10 | int funcionSumar(int fNumeroA; int fNumeroB;float *punteroResultado);
+      |                                             ~~~~~~~^~~~~~~~~~~~~~~~
+..\src\Calculadora_1.c: At top level:
+..\src\Calculadora_1.c:67:36: error: parameter 'fNumeroB' has just a forward declaration
+   67 | int funcionSumar(int fNumeroA; int fNumeroB;float* punteroResultado) // funcion sumar
+      |                                ~~~~^~~~~~~~
+..\src\Calculadora_1.c:67:22: error: parameter 'fNumeroA' has just a forward declaration
+   67 | int funcionSumar(int fNumeroA; int fNumeroB;float* punteroResultado) // funcion sumar
+      |                  ~~~~^~~~~~~~
+..\src\Calculadora_1.c: In function 'funcionSumar':
+..\src\Calculadora_1.c:69:22: error: 'fNumeroA' undeclared (first use in this function)
+   69 |  *punteroResultado = fNumeroA + fNumeroB;
+      |                      ^~~~~~~~
+..\src\Calculadora_1.c:69:22: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Calculadora_1.c:69:33: error: 'fNumeroB' undeclared (first use in this function)
+   69 |  *punteroResultado = fNumeroA + fNumeroB;
+      |                                 ^~~~~~~~
+12:47:16 **** Incremental Build of configuration Debug for project Calculadora_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Calculadora_1.o" "..\\src\\Calculadora_1.c" 
+..\src\Calculadora_1.c:10:36: error: parameter 'fNumeroB' has just a forward declaration
+   10 | int funcionSumar(int fNumeroA; int fNumeroB;float *punteroResultado);
+      |                                ~~~~^~~~~~~~
+..\src\Calculadora_1.c:10:22: error: parameter 'fNumeroA' has just a forward declaration
+   10 | int funcionSumar(int fNumeroA; int fNumeroB;float *punteroResultado);
+      |                  ~~~~^~~~~~~~
+..\src\Calculadora_1.c: In function 'main':
+..\src\Calculadora_1.c:37:40: error: expected ')' before ';' token
+   37 |     respuestaReturn = funcionSumar(numA; numB; &resultado);
+      |                                        ^
+      |                                        )
+..\src\Calculadora_1.c:37:36: warning: passing argument 1 of 'funcionSumar' makes pointer from integer without a cast [-Wint-conversion]
+   37 |     respuestaReturn = funcionSumar(numA; numB; &resultado);
+      |                                    ^~~~
+      |                                    |
+      |                                    int
+..\src\Calculadora_1.c:10:52: note: expected 'float *' but argument is of type 'int'
+   10 | int funcionSumar(int fNumeroA; int fNumeroB;float *punteroResultado);
+      |                                             ~~~~~~~^~~~~~~~~~~~~~~~
+..\src\Calculadora_1.c: At top level:
+..\src\Calculadora_1.c:67:35: error: parameter 'fNumeroB' has just a forward declaration
+   67 | int funcionSumar(int fNumeroA;int fNumeroB;float* punteroResultado) // funcion sumar
+      |                               ~~~~^~~~~~~~
+..\src\Calculadora_1.c:67:22: error: parameter 'fNumeroA' has just a forward declaration
+   67 | int funcionSumar(int fNumeroA;int fNumeroB;float* punteroResultado) // funcion sumar
+      |                  ~~~~^~~~~~~~
+..\src\Calculadora_1.c: In function 'funcionSumar':
+..\src\Calculadora_1.c:69:22: error: 'fNumeroA' undeclared (first use in this function)
+   69 |  *punteroResultado = fNumeroA + fNumeroB;
+      |                      ^~~~~~~~
+..\src\Calculadora_1.c:69:22: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Calculadora_1.c:69:33: error: 'fNumeroB' undeclared (first use in this function)
+   69 |  *punteroResultado = fNumeroA + fNumeroB;
+      |                                 ^~~~~~~~
+12:48:48 **** Incremental Build of configuration Debug for project Calculadora_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Calculadora_1.o" "..\\src\\Calculadora_1.c" 
+..\src\Calculadora_1.c:10:36: error: parameter 'fNumeroB' has just a forward declaration
+   10 | int funcionSumar(int fNumeroA; int fNumeroB;float *punteroResultado);
+      |                                ~~~~^~~~~~~~
+..\src\Calculadora_1.c:10:22: error: parameter 'fNumeroA' has just a forward declaration
+   10 | int funcionSumar(int fNumeroA; int fNumeroB;float *punteroResultado);
+      |                  ~~~~^~~~~~~~
+..\src\Calculadora_1.c: In function 'main':
+..\src\Calculadora_1.c:37:36: warning: passing argument 1 of 'funcionSumar' makes pointer from integer without a cast [-Wint-conversion]
+   37 |     respuestaReturn = funcionSumar(numA,numB,&resultado);
+      |                                    ^~~~
+      |                                    |
+      |                                    int
+..\src\Calculadora_1.c:10:52: note: expected 'float *' but argument is of type 'int'
+   10 | int funcionSumar(int fNumeroA; int fNumeroB;float *punteroResultado);
+      |                                             ~~~~~~~^~~~~~~~~~~~~~~~
+..\src\Calculadora_1.c:37:23: error: too many arguments to function 'funcionSumar'
+   37 |     respuestaReturn = funcionSumar(numA,numB,&resultado);
+      |                       ^~~~~~~~~~~~
+..\src\Calculadora_1.c:10:5: note: declared here
+   10 | int funcionSumar(int fNumeroA; int fNumeroB;float *punteroResultado);
+      |     ^~~~~~~~~~~~
+..\src\Calculadora_1.c: At top level:
+..\src\Calculadora_1.c:67:35: error: parameter 'fNumeroB' has just a forward declaration
+   67 | int funcionSumar(int fNumeroA;int fNumeroB;float* punteroResultado) // funcion sumar
+      |                               ~~~~^~~~~~~~
+..\src\Calculadora_1.c:67:22: error: parameter 'fNumeroA' has just a forward declaration
+   67 | int funcionSumar(int fNumeroA;int fNumeroB;float* punteroResultado) // funcion sumar
+      |                  ~~~~^~~~~~~~
+..\src\Calculadora_1.c: In function 'funcionSumar':
+..\src\Calculadora_1.c:69:22: error: 'fNumeroA' undeclared (first use in this function)
+   69 |  *punteroResultado = fNumeroA + fNumeroB;
+      |                      ^~~~~~~~
+..\src\Calculadora_1.c:69:22: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Calculadora_1.c:69:33: error: 'fNumeroB' undeclared (first use in this function)
+   69 |  *punteroResultado = fNumeroA + fNumeroB;
+      |                                 ^~~~~~~~
+12:51:16 **** Incremental Build of configuration Debug for project Calculadora_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Calculadora_1.o" "..\\src\\Calculadora_1.c" 
+..\src\Calculadora_1.c: In function 'main':
+..\src\Calculadora_1.c:38:23: warning: implicit declaration of function 'funcionSumar' [-Wimplicit-function-declaration]
+   38 |     respuestaReturn = funcionSumar(numA,numB,&resultado);
+      |                       ^~~~~~~~~~~~
+..\src\Calculadora_1.c: At top level:
+..\src\Calculadora_1.c:72:31: error: parameter '({anonymous})' has just a forward declaration
+   72 | int funcionSumar(int fNumeroA;int ;float* punteroResultado) // funcion sumar
+      |                               ^~~
+..\src\Calculadora_1.c:72:22: error: parameter 'fNumeroA' has just a forward declaration
+   72 | int funcionSumar(int fNumeroA;int ;float* punteroResultado) // funcion sumar
+      |                  ~~~~^~~~~~~~
+..\src\Calculadora_1.c: In function 'funcionSumar':
+..\src\Calculadora_1.c:74:22: error: 'fNumeroA' undeclared (first use in this function)
+   74 |  *punteroResultado = fNumeroA + fNumeroB;
+      |                      ^~~~~~~~
+..\src\Calculadora_1.c:74:22: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Calculadora_1.c:74:33: error: 'fNumeroB' undeclared (first use in this function)
+   74 |  *punteroResultado = fNumeroA + fNumeroB;
+      |                                 ^~~~~~~~
+12:51:52 **** Incremental Build of configuration Debug for project Calculadora_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Calculadora_1.o" "..\\src\\Calculadora_1.c" 
+..\src\Calculadora_1.c: In function 'main':
+..\src\Calculadora_1.c:38:23: warning: implicit declaration of function 'funcionSumar' [-Wimplicit-function-declaration]
+   38 |     respuestaReturn = funcionSumar(numA,numB,&resultado);
+      |                       ^~~~~~~~~~~~
+gcc -o Calculadora_1.exe "src\\Calculadora_1.o" 
+12:52:02 **** Incremental Build of configuration Debug for project Calculadora_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Calculadora_1.o" "..\\src\\Calculadora_1.c" 
+gcc -o Calculadora_1.exe "src\\Calculadora_1.o" 
+Info: Nothing to build for Calculadora_1
+12:52:36 **** Incremental Build of configuration Debug for project Calculadora_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Calculadora_1.o" "..\\src\\Calculadora_1.c" 
+gcc -o Calculadora_1.exe "src\\Calculadora_1.o" 
+12:52:42 **** Incremental Build of configuration Debug for project Calculadora_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Calculadora_1.o" "..\\src\\Calculadora_1.c" 
+gcc -o Calculadora_1.exe "src\\Calculadora_1.o" 
+12:52:56 **** Incremental Build of configuration Debug for project Calculadora_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Calculadora_1.o" "..\\src\\Calculadora_1.c" 
+gcc -o Calculadora_1.exe "src\\Calculadora_1.o" 
+12:55:20 **** Incremental Build of configuration Debug for project Calculadora_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Calculadora_1.o" "..\\src\\Calculadora_1.c" 
+gcc -o Calculadora_1.exe "src\\Calculadora_1.o" 
+Info: Nothing to build for Calculadora_1
+12:57:31 **** Incremental Build of configuration Debug for project Calculadora_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Calculadora_1.o" "..\\src\\Calculadora_1.c" 
+..\src\Calculadora_1.c: In function 'main':
+..\src\Calculadora_1.c:47:23: warning: implicit declaration of function 'funcionMultiplicar' [-Wimplicit-function-declaration]
+   47 |     respuestaReturn = funcionMultiplicar(numA, numB, &resultado);
+      |                       ^~~~~~~~~~~~~~~~~~
+gcc -o Calculadora_1.exe "src\\Calculadora_1.o" 
+12:57:43 **** Incremental Build of configuration Debug for project Calculadora_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Calculadora_1.o" "..\\src\\Calculadora_1.c" 
+gcc -o Calculadora_1.exe "src\\Calculadora_1.o" 
+13:03:20 **** Incremental Build of configuration Debug for project Calculadora_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Calculadora_1.o" "..\\src\\Calculadora_1.c" 
+gcc -o Calculadora_1.exe "src\\Calculadora_1.o" 
+Info: Nothing to build for Calculadora_1
+13:03:57 **** Incremental Build of configuration Debug for project Calculadora_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Calculadora_1.o" "..\\src\\Calculadora_1.c" 
+gcc -o Calculadora_1.exe "src\\Calculadora_1.o" 
+13:04:47 **** Incremental Build of configuration Debug for project Calculadora_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Calculadora_1.o" "..\\src\\Calculadora_1.c" 
+gcc -o Calculadora_1.exe "src\\Calculadora_1.o" 
+13:05:29 **** Incremental Build of configuration Debug for project Calculadora_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Calculadora_1.o" "..\\src\\Calculadora_1.c" 
+..\src\Calculadora_1.c: In function 'main':
+..\src\Calculadora_1.c:58:26: warning: format '%f' expects argument of type 'double', but argument 2 has type 'float *' [-Wformat=]
+   58 |    printf("Resultado: %.2f",&resultado);
+      |                       ~~~^  ~~~~~~~~~~
+      |                          |  |
+      |                          |  float *
+      |                          double
+gcc -o Calculadora_1.exe "src\\Calculadora_1.o" 
+13:06:08 **** Incremental Build of configuration Debug for project Calculadora_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Calculadora_1.o" "..\\src\\Calculadora_1.c" 
+gcc -o Calculadora_1.exe "src\\Calculadora_1.o" 
+13:06:36 **** Incremental Build of configuration Debug for project Calculadora_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Calculadora_1.o" "..\\src\\Calculadora_1.c" 
+gcc -o Calculadora_1.exe "src\\Calculadora_1.o" 
+Info: Nothing to build for Calculadora_1
+13:11:03 **** Incremental Build of configuration Debug for project Calculadora_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Calculadora_1.o" "..\\src\\Calculadora_1.c" 
+gcc -o Calculadora_1.exe "src\\Calculadora_1.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Calculadora_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+13:11:12 **** Incremental Build of configuration Debug for project Calculadora_1 ****
+Info: Internal Builder is used for build
+gcc -o Calculadora_1.exe "src\\Calculadora_1.o" 
+Info: Nothing to build for Calculadora_1
+13:12:10 **** Incremental Build of configuration Debug for project Calculadora_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Calculadora_1.o" "..\\src\\Calculadora_1.c" 
+gcc -o Calculadora_1.exe "src\\Calculadora_1.o" 
+13:12:36 **** Incremental Build of configuration Debug for project Calculadora_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Calculadora_1.o" "..\\src\\Calculadora_1.c" 
+gcc -o Calculadora_1.exe "src\\Calculadora_1.o" 
+13:13:33 **** Incremental Build of configuration Debug for project Calculadora_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Calculadora_1.o" "..\\src\\Calculadora_1.c" 
+gcc -o Calculadora_1.exe "src\\Calculadora_1.o" 
+13:14:28 **** Incremental Build of configuration Debug for project Calculadora_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Calculadora_1.o" "..\\src\\Calculadora_1.c" 
+gcc -o Calculadora_1.exe "src\\Calculadora_1.o" 
+13:16:20 **** Incremental Build of configuration Debug for project Calculadora_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Calculadora_1.o" "..\\src\\Calculadora_1.c" 
+gcc -o Calculadora_1.exe "src\\Calculadora_1.o" 
+13:16:36 **** Incremental Build of configuration Debug for project Calculadora_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Calculadora_1.o" "..\\src\\Calculadora_1.c" 
+gcc -o Calculadora_1.exe "src\\Calculadora_1.o" 
+13:17:27 **** Incremental Build of configuration Debug for project Calculadora_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Calculadora_1.o" "..\\src\\Calculadora_1.c" 
+gcc -o Calculadora_1.exe "src\\Calculadora_1.o" 

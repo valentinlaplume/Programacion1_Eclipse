@@ -1,0 +1,34 @@
+/*
+ ============================================================================
+	Valentin laplume - 1° H
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+	setbuf(stdout,NULL);
+
+	int numA;
+	int numB;
+	float resultado;
+	char operacion;
+
+	printf("Ingrese un numero: ");
+	scanf("%d",&numA);
+
+	fflush(stdin);
+	printf("Ingrese operacion: /n suma: +, resta: -, multiplicacion: *, division: / ");
+	scanf("%c",&operacion);
+
+	printf("Ingrese un numero: ");
+	scanf("%d",&numB);
+
+
+
+
+
+	return EXIT_SUCCESS;
+}

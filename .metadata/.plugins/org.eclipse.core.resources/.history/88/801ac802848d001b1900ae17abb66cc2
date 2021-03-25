@@ -1,0 +1,110 @@
+/*
+ ============================================================================
+	Valentin laplume - 1° H
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int funcionSumar(int fNumeroA,int fNumeroB ,float* punteroResultado);
+int funcionRestar(int fNumeroA,int fNumeroB ,float* punteroResultado);
+int funcionMultiplicar (int fNumeroA,int fNumeroB ,float* punteroResultado);
+
+int main(void)
+{
+	setbuf(stdout,NULL);
+
+	int numA;
+	int numB;
+	float resultado;
+	char operacion;
+	int respuestaReturn;
+
+	printf("Bienvenido a la Calculadora. \nIngrese un numero: ");
+	scanf("%d",&numA);
+
+	fflush(stdin);
+
+	printf("Ingrese operacion:\nsuma: +, resta: -, multiplicacion: *, division: /. : ");
+	scanf("%c",&operacion);
+
+	if(operacion == '+' || operacion == '-' || operacion == '*' || operacion == '/')
+	{
+		printf("Ingrese el segundo numero: ");
+		scanf("%d",&numB);
+
+		switch(operacion) // comienzo del switch.
+		{
+			case '+':
+				respuestaReturn = funcionSumar(numA,numB,&resultado);
+
+				break;
+			case '-':
+				respuestaReturn = funcionRestar(numA, numB, &resultado);
+
+				break;
+			case '*':
+				respuestaReturn = funcionMultiplicar(numA, numB, &resultado);
+
+				break;
+			case '/':
+
+				break;
+		} // fin del switch
+
+		if(respuestaReturn == 0)
+		{
+			printf("Resultado: %.2f",&resultado);
+		}
+		/*else
+		{
+			printf("Error.");
+		}*/
+	}
+	else
+	{
+		printf("Operacion incorrecta.");
+	} // fin validacion de operacion.
+
+
+
+	return EXIT_SUCCESS;
+}
+
+
+int funcionSumar(int fNumeroA,int fNumeroB ,float* punteroResultado) // funcion sumar
+{
+	*punteroResultado = fNumeroA + fNumeroB ;
+	return 0;
+}
+
+int funcionRestar(int fNumeroA,int fNumeroB ,float* punteroResultado)
+{
+	*punteroResultado = fNumeroA - fNumeroB ;
+	return 0;
+}
+
+int funcionMultiplicar (int fNumeroA,int fNumeroB ,float* punteroResultado)
+{
+	*punteroResultado = fNumeroA * fNumeroB ;
+	return 0;
+}
+
+int funcionDividir (int fNumeroA,int fNumeroB,float* punteroResultado)
+{
+	if(fNumeroB == 0)
+	{
+		*punteroResultado = printf("ERROR. No se puede dividir por 0.");
+		return 0;
+	}
+
+	*punteroResultado = fNumeroA / fNumeroB;
+
+	return 0;
+}
+
+
+
+
+

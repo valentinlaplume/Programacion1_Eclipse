@@ -1,0 +1,81 @@
+/*
+ ============================================================================
+	Valentin laplume - 1° H
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+int main(void)
+{
+	setbuf(stdout,NULL);
+
+	int numA;
+	int numB;
+	float resultado;
+	char operacion;
+	int respuestaReturn;
+
+	printf("Ingrese un numero: ");
+	scanf("%d",&numA);
+
+	fflush(stdin);
+
+	printf("Ingrese operacion:\n suma: +, resta: -, multiplicacion: *, division: /. : ");
+	scanf("%c",&operacion);
+
+	if(operacion == '+' || operacion == '-' || operacion == '*' || operacion == '/')
+	{
+		printf("Ingrese el segundo numero: ");
+		scanf("%d",&numB);
+
+		switch(operacion) // comienzo del switch.
+		{
+			case '+':
+				respuestaReturn = funcionSumar(numA,numB,&resultado);
+
+				break;
+			case '-':
+
+				break;
+			case '*':
+
+				break;
+			case '/':
+
+				break;
+		} // fin del switch
+
+		if(respuestaReturn == 0)
+		{
+			printf("Resultado: %f",resultado);
+		}
+		else
+		{
+			printf("Error.");
+		}
+	}
+	else
+	{
+		printf("Operacion incorrecta.");
+	} // fin validacion de operacion.
+
+
+
+	return EXIT_SUCCESS;
+}
+
+
+int funcionSumar(int fNumeroA;int ;float* punteroResultado) // funcion sumar
+{
+	*punteroResultado = fNumeroA + fNumeroB;
+	return 0;
+}
+
+
+
+
+
