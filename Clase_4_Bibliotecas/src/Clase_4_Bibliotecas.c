@@ -1,6 +1,6 @@
 /*
  ============================================================================
- Name        : Practicando_clase_3.c
+ Name        : Clase_4_Bibliotecas.c
  Author      : 
  Version     :
  Copyright   : Your copyright notice
@@ -10,29 +10,30 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
-int funcionSumar (int numA,int numB,int* resul);
+#include "utn.h"
 
 int main(void)
 {
 	setbuf(stdout,NULL);
-	int a=2;
-	int b=3;
-	int resultado;
+	int numero;
 
-	funcionSumar(a,b,&resultado);
-
-	printf("resultado: %d", resultado);
-
-
+	if(utn_getNumero(&numero
+					,"Ingrese un numero entre 0 y 100: "
+					,"Numero ingresado fuera de rango. "
+					,0
+					,100
+					,2) == 0) // valido que retorne 0.
+	{
+		printf("El numero ingresado es: %d",numero);
+	}
 
 	return EXIT_SUCCESS;
 }
 
-int funcionSumar (int numA,int numB,int* resul)
-{
 
-	*resul = numA + numB;
 
-	return resul;
-}
+
+
+
+
+

@@ -1,99 +1,13 @@
-Info: Nothing to build for Practicando_clase_3
-15:05:59 **** Incremental Build of configuration Debug for project Practicando_clase_3 ****
+21:53:27 **** Incremental Build of configuration Debug for project Clase_4_Bibliotecas ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Practicando_clase_3.o" "..\\src\\Practicando_clase_3.c" 
-..\src\Practicando_clase_3.c:14:23: error: parameter 'numA' has just a forward declaration
-   14 | int funcionSumar (int numA;int numB);
-      |                   ~~~~^~~~
-..\src\Practicando_clase_3.c: In function 'main':
-..\src\Practicando_clase_3.c:23:14: error: too many arguments to function 'funcionSumar'
-   23 |  resultado = funcionSumar(a,b);
-      |              ^~~~~~~~~~~~
-..\src\Practicando_clase_3.c:14:5: note: declared here
-   14 | int funcionSumar (int numA;int numB);
-      |     ^~~~~~~~~~~~
-..\src\Practicando_clase_3.c: At top level:
-..\src\Practicando_clase_3.c:32:23: error: parameter 'numA' has just a forward declaration
-   32 | int funcionSumar (int numA;int numB)
-      |                   ~~~~^~~~
-..\src\Practicando_clase_3.c: In function 'funcionSumar':
-..\src\Practicando_clase_3.c:35:2: error: 'resultado' undeclared (first use in this function)
-   35 |  resultado=numA + numB;
-      |  ^~~~~~~~~
-..\src\Practicando_clase_3.c:35:2: note: each undeclared identifier is reported only once for each function it appears in
-..\src\Practicando_clase_3.c:35:12: error: 'numA' undeclared (first use in this function); did you mean 'numB'?
-   35 |  resultado=numA + numB;
-      |            ^~~~
-      |            numB
-15:06:19 **** Incremental Build of configuration Debug for project Practicando_clase_3 ****
+gcc -o Clase_4_Bibliotecas.exe "src\\Clase_4_Bibliotecas.o" "src\\utn.o" 
+Info: Nothing to build for Clase_4_Bibliotecas
+21:55:01 **** Incremental Build of configuration Debug for project Clase_4_Bibliotecas ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Practicando_clase_3.o" "..\\src\\Practicando_clase_3.c" 
-..\src\Practicando_clase_3.c:14:23: error: parameter 'numA' has just a forward declaration
-   14 | int funcionSumar (int numA;int numB);
-      |                   ~~~~^~~~
-..\src\Practicando_clase_3.c: In function 'main':
-..\src\Practicando_clase_3.c:23:14: error: too many arguments to function 'funcionSumar'
-   23 |  resultado = funcionSumar(a,b);
-      |              ^~~~~~~~~~~~
-..\src\Practicando_clase_3.c:14:5: note: declared here
-   14 | int funcionSumar (int numA;int numB);
-      |     ^~~~~~~~~~~~
-..\src\Practicando_clase_3.c: At top level:
-..\src\Practicando_clase_3.c:32:5: error: conflicting types for 'funcionSumar'
-   32 | int funcionSumar (int numA,int numB)
-      |     ^~~~~~~~~~~~
-..\src\Practicando_clase_3.c:14:5: note: previous declaration of 'funcionSumar' was here
-   14 | int funcionSumar (int numA;int numB);
-      |     ^~~~~~~~~~~~
-..\src\Practicando_clase_3.c: In function 'funcionSumar':
-..\src\Practicando_clase_3.c:35:2: error: 'resultado' undeclared (first use in this function)
-   35 |  resultado=numA + numB;
-      |  ^~~~~~~~~
-..\src\Practicando_clase_3.c:35:2: note: each undeclared identifier is reported only once for each function it appears in
-15:06:40 **** Incremental Build of configuration Debug for project Practicando_clase_3 ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase_4_Bibliotecas.o" "..\\src\\Clase_4_Bibliotecas.c" 
+gcc -o Clase_4_Bibliotecas.exe "src\\Clase_4_Bibliotecas.o" "src\\utn.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase_4_Bibliotecas.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+21:55:05 **** Incremental Build of configuration Debug for project Clase_4_Bibliotecas ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Practicando_clase_3.o" "..\\src\\Practicando_clase_3.c" 
-..\src\Practicando_clase_3.c:14:23: error: parameter 'numA' has just a forward declaration
-   14 | int funcionSumar (int numA;int numB);
-      |                   ~~~~^~~~
-..\src\Practicando_clase_3.c: In function 'main':
-..\src\Practicando_clase_3.c:23:14: error: too many arguments to function 'funcionSumar'
-   23 |  resultado = funcionSumar(a,b);
-      |              ^~~~~~~~~~~~
-..\src\Practicando_clase_3.c:14:5: note: declared here
-   14 | int funcionSumar (int numA;int numB);
-      |     ^~~~~~~~~~~~
-..\src\Practicando_clase_3.c: At top level:
-..\src\Practicando_clase_3.c:32:5: error: conflicting types for 'funcionSumar'
-   32 | int funcionSumar (int numA,int numB)
-      |     ^~~~~~~~~~~~
-..\src\Practicando_clase_3.c:14:5: note: previous declaration of 'funcionSumar' was here
-   14 | int funcionSumar (int numA;int numB);
-      |     ^~~~~~~~~~~~
-15:06:52 **** Incremental Build of configuration Debug for project Practicando_clase_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Practicando_clase_3.o" "..\\src\\Practicando_clase_3.c" 
-gcc -o Practicando_clase_3.exe "src\\Practicando_clase_3.o" 
-Info: Nothing to build for Practicando_clase_3
-15:08:19 **** Incremental Build of configuration Debug for project Practicando_clase_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Practicando_clase_3.o" "..\\src\\Practicando_clase_3.c" 
-..\src\Practicando_clase_3.c: In function 'main':
-..\src\Practicando_clase_3.c:23:2: error: too many arguments to function 'funcionSumar'
-   23 |  funcionSumar(a,b,&resultado);
-      |  ^~~~~~~~~~~~
-..\src\Practicando_clase_3.c:14:5: note: declared here
-   14 | int funcionSumar (int numA,int numB);
-      |     ^~~~~~~~~~~~
-..\src\Practicando_clase_3.c: At top level:
-..\src\Practicando_clase_3.c:32:5: error: conflicting types for 'funcionSumar'
-   32 | int funcionSumar (int numA,int numB,int* resul)
-      |     ^~~~~~~~~~~~
-..\src\Practicando_clase_3.c:14:5: note: previous declaration of 'funcionSumar' was here
-   14 | int funcionSumar (int numA,int numB);
-      |     ^~~~~~~~~~~~
-15:09:18 **** Incremental Build of configuration Debug for project Practicando_clase_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Practicando_clase_3.o" "..\\src\\Practicando_clase_3.c" 
-gcc -o Practicando_clase_3.exe "src\\Practicando_clase_3.o" 
-Info: Nothing to build for Practicando_clase_3
+gcc -o Clase_4_Bibliotecas.exe "src\\Clase_4_Bibliotecas.o" "src\\utn.o" 

@@ -1,9 +1,10 @@
 LaunchTargetManager/configs/Calculadora_1.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/Clase_4_Bibliotecas.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
 LaunchTargetManager/configs/Practicando_clase_3.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:Calculadora_1.exe,org.eclipse.launchbar.core.descriptorType.default\:Practicando_clase_3.exe
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Practicando_clase_3.exe,org.eclipse.launchbar.core.descriptorType.default\:Calculadora_1.exe,org.eclipse.launchbar.core.descriptorType.default\:Clase_4_Bibliotecas.exe
 eclipse.preferences.version=1
 org.eclipse.launchbar.core.descriptorType.default\:Calculadora_1.exe/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:Calculadora_1.exe/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

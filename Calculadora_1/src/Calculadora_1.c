@@ -10,6 +10,7 @@
 int funcionSumar(int fNumeroA,int fNumeroB ,float* punteroResultado);
 int funcionRestar(int fNumeroA,int fNumeroB ,float* punteroResultado);
 int funcionMultiplicar (int fNumeroA,int fNumeroB ,float* punteroResultado);
+int funcionDividir (int fNumeroA,int fNumeroB,float* punteroResultado);
 
 int main(void)
 {
@@ -34,45 +35,42 @@ int main(void)
 		scanf("%c",&operacion);
 
 		if(operacion == '+' || operacion == '-' || operacion == '*' || operacion == '/')
+		{
+			printf(" -Ingrese el 2° numero: ");
+			scanf("%d",&numB);
+
+			switch(operacion) // comienzo del switch.
 			{
-				printf(" -Ingrese el 2° numero: ");
-				scanf("%d",&numB);
-
-				switch(operacion) // comienzo del switch.
-				{
-					case '+':
-						respuestaReturn = funcionSumar(numA,numB,&resultado);
-
-						break;
-					case '-':
-						respuestaReturn = funcionRestar(numA, numB, &resultado);
-
-						break;
-					case '*':
-						respuestaReturn = funcionMultiplicar(numA, numB, &resultado);
-
-						break;
-					case '/':
-
-						break;
+				case '+':
+					respuestaReturn = funcionSumar(numA,numB,&resultado);
+					break;
+				case '-':
+					respuestaReturn = funcionRestar(numA, numB, &resultado);
+					break;
+				case '*':
+					respuestaReturn = funcionMultiplicar(numA, numB, &resultado);
+					break;
+				case '/':
+					respuestaReturn = funcionDividir (numA, numB, &resultado);
+					break;
 				} // fin del switch
 
-				if(respuestaReturn == 0)
-				{
-					printf("Resultado: %.2f.",resultado);
-				}
-				else
-				{
-					printf("Error, no se puede dividir por 0.");
-				}
+			if(respuestaReturn == 0)
+			{
+				printf("Resultado: %.2f.",resultado);
 			}
 			else
 			{
-				printf("Operacion incorrecta.");
-			} // fin validacion de operacion.
+				printf("Error, no se puede dividir por 0.");
+			}
+		}
+		else
+		{
+			printf("Operacion incorrecta.");
+		} // fin validacion de operacion.
 
 		fflush(stdin);
-		printf("\n- Responde 's' para realizar otra operacion:  ");
+		printf("\n- Responde 's' para realizar otra operacion: ");
 		scanf("%c",&respuestaSeguir);
 	}while(respuestaSeguir == 's'); // fin ciclo do while.
 
@@ -83,31 +81,48 @@ int main(void)
 
 int funcionSumar(int fNumeroA,int fNumeroB ,float* punteroResultado) // funcion sumar
 {
-	*punteroResultado = fNumeroA + fNumeroB ;
-	return 0;
+	int retorno = -1;
+	if(punteroResultado != NULL)
+	{
+		*punteroResultado = fNumeroA + fNumeroB ;
+		retorno = 0;
+	}
+	return retorno;
 }
 
 int funcionRestar(int fNumeroA,int fNumeroB ,float* punteroResultado)
 {
-	*punteroResultado = fNumeroA - fNumeroB ;
-	return 0;
+	int retorno = -1;
+	if(punteroResultado != NULL)
+	{
+		*punteroResultado = fNumeroA - fNumeroB;
+		retorno = 0;
+	}
+	return retorno;
+
 }
 
 int funcionMultiplicar (int fNumeroA,int fNumeroB ,float* punteroResultado)
 {
-	*punteroResultado = fNumeroA * fNumeroB ;
-	return 0;
+	int retorno = -1;
+	if(punteroResultado != NULL)
+	{
+		*punteroResultado = fNumeroA * fNumeroB ;
+		retorno = 0;
+	}
+	return retorno;
 }
 
 int funcionDividir (int fNumeroA,int fNumeroB,float* punteroResultado)
 {
-	if(fNumeroB == 0)
+	int retorno = -1;
+	if(punteroResultado != NULL && fNumeroB != 0)
 	{
-		return -1;
+		*punteroResultado = (float) fNumeroA / fNumeroB;
+		retorno = 0;
 	}
 
-	*punteroResultado =(float)fNumeroA / fNumeroB;
-	return 0;
+	return retorno;
 }
 
 
