@@ -53,7 +53,6 @@ int arr_getCalcularMaximoArrayInt(int pArray[], int limite, int* pResultado)
 			bufferIntMaximo = pArray[0];
 			if(pArray[i] > bufferIntMaximo )
 			{
-				bufferIntMaximo = pArray[i];
 				*pResultado = bufferIntMaximo;
 				retorno=0;
 			}
