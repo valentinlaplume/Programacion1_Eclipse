@@ -1,13 +1,187 @@
-21:53:27 **** Incremental Build of configuration Debug for project Clase_4_Bibliotecas ****
+21:40:14 **** Incremental Build of configuration Debug for project Clase_5_Arrays ****
 Info: Internal Builder is used for build
-gcc -o Clase_4_Bibliotecas.exe "src\\Clase_4_Bibliotecas.o" "src\\utn.o" 
-Info: Nothing to build for Clase_4_Bibliotecas
-21:55:01 **** Incremental Build of configuration Debug for project Clase_4_Bibliotecas ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\arr.o" "..\\src\\arr.c" 
+gcc -o Clase_5_Arrays.exe "src\\Clase_5_Arrays.o" "src\\arr.o" "src\\utn.o" 
+21:58:17 **** Incremental Build of configuration Debug for project Clase_5_Arrays ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase_4_Bibliotecas.o" "..\\src\\Clase_4_Bibliotecas.c" 
-gcc -o Clase_4_Bibliotecas.exe "src\\Clase_4_Bibliotecas.o" "src\\utn.o" 
-c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase_4_Bibliotecas.exe: Permission denied
-collect2.exe: error: ld returned 1 exit status
-21:55:05 **** Incremental Build of configuration Debug for project Clase_4_Bibliotecas ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\arr.o" "..\\src\\arr.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase_5_Arrays.o" "..\\src\\Clase_5_Arrays.c" 
+..\src\Clase_5_Arrays.c: In function 'main':
+..\src\Clase_5_Arrays.c:32:57: error: expected declaration specifiers or '...' before ',' token
+   32 |    int arr_getCalcularMaximoArrayInt(int pArray[edad],  , int &maximo);
+      |                                                         ^
+..\src\Clase_5_Arrays.c:32:63: error: expected ';', ',' or ')' before '&' token
+   32 |    int arr_getCalcularMaximoArrayInt(int pArray[edad],  , int &maximo);
+      |                                                               ^
+..\src\Clase_5_Arrays.c:37:9: warning: zero-length ms_printf format string [-Wformat-zero-length]
+   37 |  printf("");
+      |         ^~
+..\src\Clase_5_Arrays.c:27:6: warning: unused variable 'maximo' [-Wunused-variable]
+   27 |  int maximo;
+      |      ^~~~~~
+..\src\Clase_5_Arrays.c: In function 'arr_getCalcularMaximoArrayInt':
+..\src\Clase_5_Arrays.c:49:35: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+   49 |  if (pArray != NULL && pResultado != NULL & limite > 0)
+      |                                   ^
+21:58:55 **** Incremental Build of configuration Debug for project Clase_5_Arrays ****
 Info: Internal Builder is used for build
-gcc -o Clase_4_Bibliotecas.exe "src\\Clase_4_Bibliotecas.o" "src\\utn.o" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase_5_Arrays.o" "..\\src\\Clase_5_Arrays.c" 
+..\src\Clase_5_Arrays.c: In function 'main':
+..\src\Clase_5_Arrays.c:32:57: error: expected declaration specifiers or '...' before ',' token
+   32 |    int arr_getCalcularMaximoArrayInt(int pArray[edad],  , int &maximo);
+      |                                                         ^
+..\src\Clase_5_Arrays.c:32:63: error: expected ';', ',' or ')' before '&' token
+   32 |    int arr_getCalcularMaximoArrayInt(int pArray[edad],  , int &maximo);
+      |                                                               ^
+..\src\Clase_5_Arrays.c:37:9: warning: zero-length ms_printf format string [-Wformat-zero-length]
+   37 |  printf("");
+      |         ^~
+..\src\Clase_5_Arrays.c:27:6: warning: unused variable 'maximo' [-Wunused-variable]
+   27 |  int maximo;
+      |      ^~~~~~
+..\src\Clase_5_Arrays.c: In function 'arr_getCalcularMaximoArrayInt':
+..\src\Clase_5_Arrays.c:49:13: error: expected expression before ']' token
+   49 |  if (pArray[] != NULL && pResultado != NULL && limite > 0)
+      |             ^
+21:59:06 **** Incremental Build of configuration Debug for project Clase_5_Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase_5_Arrays.o" "..\\src\\Clase_5_Arrays.c" 
+..\src\Clase_5_Arrays.c: In function 'main':
+..\src\Clase_5_Arrays.c:32:57: error: expected declaration specifiers or '...' before ',' token
+   32 |    int arr_getCalcularMaximoArrayInt(int pArray[edad],  , int &maximo);
+      |                                                         ^
+..\src\Clase_5_Arrays.c:32:63: error: expected ';', ',' or ')' before '&' token
+   32 |    int arr_getCalcularMaximoArrayInt(int pArray[edad],  , int &maximo);
+      |                                                               ^
+..\src\Clase_5_Arrays.c:37:9: warning: zero-length ms_printf format string [-Wformat-zero-length]
+   37 |  printf("");
+      |         ^~
+..\src\Clase_5_Arrays.c:27:6: warning: unused variable 'maximo' [-Wunused-variable]
+   27 |  int maximo;
+      |      ^~~~~~
+21:59:25 **** Incremental Build of configuration Debug for project Clase_5_Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase_5_Arrays.o" "..\\src\\Clase_5_Arrays.c" 
+..\src\Clase_5_Arrays.c: In function 'main':
+..\src\Clase_5_Arrays.c:32:56: error: expected declaration specifiers or '...' before numeric constant
+   32 |    int arr_getCalcularMaximoArrayInt(int pArray[edad], 5 , &maximo);
+      |                                                        ^
+..\src\Clase_5_Arrays.c:32:60: error: expected declaration specifiers or '...' before '&' token
+   32 |    int arr_getCalcularMaximoArrayInt(int pArray[edad], 5 , &maximo);
+      |                                                            ^
+..\src\Clase_5_Arrays.c:37:9: warning: zero-length ms_printf format string [-Wformat-zero-length]
+   37 |  printf("");
+      |         ^~
+..\src\Clase_5_Arrays.c:27:6: warning: unused variable 'maximo' [-Wunused-variable]
+   27 |  int maximo;
+      |      ^~~~~~
+21:59:49 **** Incremental Build of configuration Debug for project Clase_5_Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase_5_Arrays.o" "..\\src\\Clase_5_Arrays.c" 
+..\src\Clase_5_Arrays.c: In function 'main':
+..\src\Clase_5_Arrays.c:32:43: error: expected ')' before numeric constant
+   32 |    int arr_getCalcularMaximoArrayInt(edad, 5 , &maximo);
+      |                                           ^~
+      |                                           )
+..\src\Clase_5_Arrays.c:37:9: warning: zero-length ms_printf format string [-Wformat-zero-length]
+   37 |  printf("");
+      |         ^~
+..\src\Clase_5_Arrays.c:27:6: warning: unused variable 'maximo' [-Wunused-variable]
+   27 |  int maximo;
+      |      ^~~~~~
+22:00:36 **** Incremental Build of configuration Debug for project Clase_5_Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase_5_Arrays.o" "..\\src\\Clase_5_Arrays.c" 
+..\src\Clase_5_Arrays.c: In function 'main':
+..\src\Clase_5_Arrays.c:32:43: error: expected ')' before numeric constant
+   32 |    int arr_getCalcularMaximoArrayInt(edad, 5 , &maximo);
+      |                                           ^~
+      |                                           )
+22:00:45 **** Incremental Build of configuration Debug for project Clase_5_Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase_5_Arrays.o" "..\\src\\Clase_5_Arrays.c" 
+..\src\Clase_5_Arrays.c: In function 'main':
+..\src\Clase_5_Arrays.c:32:44: error: expected ')' before numeric constant
+   32 |    int (arr_getCalcularMaximoArrayInt(edad, 5 , &maximo);
+      |                                            ^~
+      |                                            )
+..\src\Clase_5_Arrays.c:32:57: error: expected ')' before ';' token
+   32 |    int (arr_getCalcularMaximoArrayInt(edad, 5 , &maximo);
+      |                                                         ^
+      |                                                         )
+..\src\Clase_5_Arrays.c:79:1: error: expected declaration or statement at end of input
+   79 | }
+      | ^
+At top level:
+..\src\Clase_5_Arrays.c:74:5: warning: 'arr_getCalcularPromedioArrayInt' defined but not used [-Wunused-function]
+   74 | int arr_getCalcularPromedioArrayInt(int pArray[], int limite, float* pResultado)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Clase_5_Arrays.c:67:5: warning: 'arr_getCalcularMinimoArrayInt' defined but not used [-Wunused-function]
+   67 | int arr_getCalcularMinimoArrayInt(int pArray[], int limite, int* pResultado)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Clase_5_Arrays.c:43:5: warning: 'arr_getCalcularMaximoArrayInt' defined but not used [-Wunused-function]
+   43 | int arr_getCalcularMaximoArrayInt(int pArray[], int limite, int* pResultado)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+22:01:09 **** Incremental Build of configuration Debug for project Clase_5_Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase_5_Arrays.o" "..\\src\\Clase_5_Arrays.c" 
+..\src\Clase_5_Arrays.c: In function 'main':
+..\src\Clase_5_Arrays.c:33:3: error: expected '=', ',', ';', 'asm' or '__attribute__' before '}' token
+   33 |   }
+      |   ^
+22:08:03 **** Incremental Build of configuration Debug for project Clase_5_Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase_5_Arrays.o" "..\\src\\Clase_5_Arrays.c" 
+..\src\Clase_5_Arrays.c: In function 'main':
+..\src\Clase_5_Arrays.c:32:43: error: expected expression before 'int'
+   32 |    arr_getCalcularMaximoArrayInt(edad, 5, int* pResultado)
+      |                                           ^~~
+..\src\Clase_5_Arrays.c:32:34: warning: passing argument 1 of 'arr_getCalcularMaximoArrayInt' makes pointer from integer without a cast [-Wint-conversion]
+   32 |    arr_getCalcularMaximoArrayInt(edad, 5, int* pResultado)
+      |                                  ^~~~
+      |                                  |
+      |                                  int
+..\src\Clase_5_Arrays.c:18:39: note: expected 'int *' but argument is of type 'int'
+   18 | int arr_getCalcularMaximoArrayInt(int pArray[], int limite, int* pResultado);
+      |                                   ~~~~^~~~~~~~
+..\src\Clase_5_Arrays.c:32:59: error: expected ';' before '}' token
+   32 |    arr_getCalcularMaximoArrayInt(edad, 5, int* pResultado)
+      |                                                           ^
+      |                                                           ;
+   33 |   }
+      |   ~                                                        
+22:08:26 **** Incremental Build of configuration Debug for project Clase_5_Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase_5_Arrays.o" "..\\src\\Clase_5_Arrays.c" 
+..\src\Clase_5_Arrays.c: In function 'main':
+..\src\Clase_5_Arrays.c:32:34: warning: passing argument 1 of 'arr_getCalcularMaximoArrayInt' makes pointer from integer without a cast [-Wint-conversion]
+   32 |    arr_getCalcularMaximoArrayInt(edad, 5, &maximo);
+      |                                  ^~~~
+      |                                  |
+      |                                  int
+..\src\Clase_5_Arrays.c:18:39: note: expected 'int *' but argument is of type 'int'
+   18 | int arr_getCalcularMaximoArrayInt(int pArray[], int limite, int* pResultado);
+      |                                   ~~~~^~~~~~~~
+gcc -o Clase_5_Arrays.exe "src\\Clase_5_Arrays.o" "src\\arr.o" "src\\utn.o" 
+22:08:44 **** Incremental Build of configuration Debug for project Clase_5_Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase_5_Arrays.o" "..\\src\\Clase_5_Arrays.c" 
+..\src\Clase_5_Arrays.c: In function 'main':
+..\src\Clase_5_Arrays.c:32:34: warning: passing argument 1 of 'arr_getCalcularMaximoArrayInt' makes pointer from integer without a cast [-Wint-conversion]
+   32 |    arr_getCalcularMaximoArrayInt(edad, 5, &maximo);
+      |                                  ^~~~
+      |                                  |
+      |                                  int
+..\src\Clase_5_Arrays.c:18:39: note: expected 'int *' but argument is of type 'int'
+   18 | int arr_getCalcularMaximoArrayInt(int pArray[], int limite, int* pResultado);
+      |                                   ~~~~^~~~~~~~
+gcc -o Clase_5_Arrays.exe "src\\Clase_5_Arrays.o" "src\\arr.o" "src\\utn.o" 
+22:09:25 **** Incremental Build of configuration Debug for project Clase_5_Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase_5_Arrays.o" "..\\src\\Clase_5_Arrays.c" 
+gcc -o Clase_5_Arrays.exe "src\\Clase_5_Arrays.o" "src\\arr.o" "src\\utn.o" 
+Info: Nothing to build for Clase_5_Arrays
+22:11:11 **** Incremental Build of configuration Debug for project Clase_5_Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase_5_Arrays.o" "..\\src\\Clase_5_Arrays.c" 
+gcc -o Clase_5_Arrays.exe "src\\Clase_5_Arrays.o" "src\\arr.o" "src\\utn.o" 
