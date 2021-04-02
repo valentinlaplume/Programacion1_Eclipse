@@ -13,7 +13,6 @@
 
 #include "array.h"
 #include "utn.h"
-#include "array.h"
 
 #define CANTIDAD_EDADES 5
 
@@ -38,19 +37,7 @@ int main(void)
 
 	if(arr_getCalcularMaximoArrayInt(Edades, CANTIDAD_EDADES, &maximoInt)==0)
 	{
-<<<<<<< HEAD
 		printf("La edad maxima es: %d\n", maximoInt); // muestro EDAD MAXIMA.
-=======
-		for(int i=0;i<limite;i++)
-		{
-			bufferIntMaximo = pArray[0];
-			if(pArray[i] > bufferIntMaximo )
-			{
-				*pResultado = bufferIntMaximo;
-				retorno=0;
-			}
-		}
->>>>>>> 1a8a1baaa3aa3ea55e5cc5a76e0fa88e888f9b77
 	}
 
 	if(arr_getCalcularMinimoArrayInt(Edades, CANTIDAD_EDADES, &minimoInt)==0)
