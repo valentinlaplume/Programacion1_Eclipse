@@ -10,44 +10,37 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+
+#include "array.h"
 #include "utn.h"
-#include "arr.h"
+#include "array.h"
 
-#define CANTIDAD_EDADES 2
-
-int arr_getCalcularMaximoArrayInt(int pArray[], int limite, int* pResultado);
-int arr_getCalcularMinimoArrayInt(int pArray[], int limite, int* pResultado);
-int arr_getCalcularMinimoArrayInt(int pArray[], int limite, int* pResultado);
+#define CANTIDAD_EDADES 5
 
 int main(void)
 {
 	setbuf(stdout,NULL);
 
-	int edad;
-	int maximo;
-	for(int i=0;i<CANTIDAD_EDADES;i++)
+	int Edades[CANTIDAD_EDADES];
+	int maximoInt;
+	int minimoInt;
+	float promedio;
+	for(int i=0; i<CANTIDAD_EDADES; i++) // recorro para pedir la EDAD.
 	{
-		if(utn_getNumero(&edad, "Ingrese edad, menor a 100 ", "error", 0,100, 3) == 0)
+		if(utn_getNumero(&Edades[i], "Ingrese edad, menor a 100: ", "Error.\n", 1,100, 1) == 0) // o " Edades[i] = edadIngresada; "
 		{
-			arr_getCalcularMaximoArrayInt(&edad, 5, &maximo);
+			arr_getCalcularMaximoArrayInt(Edades, CANTIDAD_EDADES, &maximoInt);
+			arr_getCalcularMinimoArrayInt(Edades, CANTIDAD_EDADES, &minimoInt);
+			arr_getCalcularPromedioArrayInt(Edades, CANTIDAD_EDADES, &promedio);
 		}
 
 	}
 
-	printf("el maximo es: %d", maximo);
-
-
-	return EXIT_SUCCESS;
-}
-
-int arr_getCalcularMaximoArrayInt(int pArray[], int limite, int* pResultado)
-{
-	int retorno = -1;
-	int bufferIntMaximo;
-
-
-	if (pArray != NULL && pResultado != NULL && limite > 0)
+	if(arr_getCalcularMaximoArrayInt(Edades, CANTIDAD_EDADES, &maximoInt)==0)
 	{
+<<<<<<< HEAD
+		printf("La edad maxima es: %d\n", maximoInt); // muestro EDAD MAXIMA.
+=======
 		for(int i=0;i<limite;i++)
 		{
 			bufferIntMaximo = pArray[0];
@@ -57,21 +50,20 @@ int arr_getCalcularMaximoArrayInt(int pArray[], int limite, int* pResultado)
 				retorno=0;
 			}
 		}
+>>>>>>> 1a8a1baaa3aa3ea55e5cc5a76e0fa88e888f9b77
 	}
 
-	return retorno;
+	if(arr_getCalcularMinimoArrayInt(Edades, CANTIDAD_EDADES, &minimoInt)==0)
+	{
+		printf("La edad minima es: %d\n", minimoInt); // muestro EDAD MINIMA.
+	}
+
+	if(arr_getCalcularPromedioArrayInt(Edades, CANTIDAD_EDADES, &promedio)==0)
+	{
+		printf("Promedio de edades: %.2f\n", promedio); // muestro PROMEDIO.
+	}
+
+	return EXIT_SUCCESS;
 }
 
-int arr_getCalcularMinimoArrayInt(int pArray[], int limite, int* pResultado)
-{
-	int retorno = -1;
 
-	return retorno;
-}
-
-int arr_getCalcularPromedioArrayInt(int pArray[], int limite, float* pResultado)
-{
-	int retorno = -1;
-
-	return retorno;
-}
