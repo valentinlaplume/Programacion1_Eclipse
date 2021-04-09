@@ -1,0 +1,131 @@
+/*
+ ============================================================================
+	Valentin laplume - 1° H
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int funcionSumar(int fNumeroA,int fNumeroB ,float* punteroResultado);
+int funcionRestar(int fNumeroA,int fNumeroB ,float* punteroResultado);
+int funcionMultiplicar (int fNumeroA,int fNumeroB ,float* punteroResultado);
+int funcionDividir (int fNumeroA,int fNumeroB,float* punteroResultado);
+
+int main(void)
+{
+	setbuf(stdout,NULL);
+
+	int numA;
+	int numB;
+	float resultado;
+	char operacion;
+	int respuestaReturn;
+	char respuestaSeguir;
+
+
+
+	do
+	{
+		printf("Bienvenido a la Calculadora. \n -Ingrese el 1° numero: ");
+		scanf("%d",&numA);
+
+		fflush(stdin);
+		printf("Ingrese operacion:\nsuma: +, resta: -, multiplicacion: *, division: /. : ");
+		scanf("%c",&operacion);
+
+		if(operacion == '+' || operacion == '-' || operacion == '*' || operacion == '/')
+		{
+			printf(" -Ingrese el 2° numero: ");
+			scanf("%d",&numB);
+
+			switch(operacion) // comienzo del switch.
+			{
+				case '+':
+					respuestaReturn = funcionSumar(numA,numB,&resultado);
+					break;
+				case '-':
+					respuestaReturn = funcionRestar(numA, numB, &resultado);
+					break;
+				case '*':
+					respuestaReturn = funcionMultiplicar(numA, numB, &resultado);
+					break;
+				case '/':
+					respuestaReturn = funcionDividir (numA, numB, &resultado);
+					break;
+				} // fin del switch
+
+			if(respuestaReturn == 0)
+			{
+				printf("Resultado: %.2f.",resultado);
+			}
+			else
+			{
+				printf("Error, no se puede dividir por 0.");
+			}
+		}
+		else
+		{
+			printf("Operacion incorrecta.");
+		} // fin validacion de operacion.
+
+		fflush(stdin);
+		printf("\n- Responde 's' para realizar otra operacion: ");
+		scanf("%c",&respuestaSeguir);
+	}while(respuestaSeguir == 's'); // fin ciclo do while.
+
+
+	return EXIT_SUCCESS;
+}
+
+
+int funcionSumar(int fNumeroA,int fNumeroB ,float* punteroResultado) // funcion sumar
+{
+	int retorno = -1;
+	if(punteroResultado != NULL)
+	{
+		*punteroResultado = fNumeroA + fNumeroB ;
+		retorno = 0;
+	}
+	return retorno;
+}
+
+int funcionRestar(int fNumeroA,int fNumeroB ,float* punteroResultado)
+{
+	int retorno = -1;
+	if(punteroResultado != NULL)
+	{
+		*punteroResultado = fNumeroA - fNumeroB;
+		retorno = 0;
+	}
+	return retorno;
+
+}
+
+int funcionMultiplicar (int fNumeroA,int fNumeroB ,float* punteroResultado)
+{
+	int retorno = -1;
+	if(punteroResultado != NULL)
+	{
+		*punteroResultado = fNumeroA * fNumeroB ;
+		retorno = 0;
+	}
+	return retorno;
+}
+
+int funcionDividir (int fNumeroA,int fNumeroB,float* punteroResultado)
+{
+	int retorno = -1;
+	if(punteroResultado != NULL && fNumeroB != 0)
+	{
+		*punteroResultado = (float) fNumeroA / fNumeroB;
+		retorno = 0;
+	}
+
+	return retorno;
+}
+
+
+
+
+
